@@ -1,0 +1,13 @@
+.sous/
+__pycache__/
+*.pyc
+
+data/raw/
+data/processed/
+data/yolo/
+
+models/*.pt
+
+.ipynb_checkpoints/
+
+.DS_Store
