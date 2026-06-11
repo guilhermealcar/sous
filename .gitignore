@@ -2,11 +2,15 @@
 __pycache__/
 *.pyc
 
+data/
 data/raw/
 data/processed/
 data/yolo/
 
 models/*.pt
+*.pt
+
+runs/
 
 .ipynb_checkpoints/
 
