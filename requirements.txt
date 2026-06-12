@@ -1,9 +1,12 @@
 ultralytics
-opencv-python
+opencv-python-headless
+streamlit
+streamlit-geolocation
+folium
+streamlit-folium
 numpy
 pandas
 matplotlib
 pyyaml
-streamlit
 pillow
 tqdm
