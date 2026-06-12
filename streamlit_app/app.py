@@ -179,7 +179,7 @@ if image_source:
     # ==================================================
     # MAP
     # ==================================================
-    st.subheader("🗺️ Location Map")
+    st.subheader("Location Map")
 
     if lat is not None and lon is not None:
         m = folium.Map(
@@ -203,4 +203,4 @@ if image_source:
 
         st.info(f"Latitude: {lat:.6f} | Longitude: {lon:.6f}")
     else:
-        st.warning("⚠️ Location permission not granted. Please click the GPS button in Step 1 before capturing the image.")
+        st.warning("Location permission not granted. Please click the GPS button in Step 1 before capturing the image.")
