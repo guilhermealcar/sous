@@ -25,13 +25,12 @@ if "lon" not in st.session_state:
 # ==================================================
 # MODEL
 # ==================================================
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MODEL_PATH = os.path.join(BASE_DIR, "runs", "detect", "sous_v2_augmented", "weights", "best.pt")
+MODEL_PATH = "best.pt"
 
 @st.cache_resource
 def load_model():
     if not os.path.exists(MODEL_PATH):
-        st.error(f"Arquivo de pesos não encontrado em: {MODEL_PATH}. Aguarde o fim do treinamento.")
+        st.error(f"Arquivo de pesos não encontrado. Certifique-se de que fez o upload do best.pt")
         st.stop()
     return YOLO(MODEL_PATH)
 
